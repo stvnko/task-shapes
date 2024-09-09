@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Room App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div id="room">
+        <button id="addTaskBtn">Add task <span class="shortcut">Q</span></button>
+        <div id="inputTray">
+            <input type="text" id="taskName" placeholder="Task name">
+            <textarea id="taskDescription" placeholder="Description"></textarea>
+            <button id="cancelTask">Cancel</button>
+            <button id="addTaskConfirm">Add task</button>
+        </div>
+        <div id="settingsPanel">
+            <label for="gravityToggle">Gravity:</label>
+            <input type="checkbox" id="gravityToggle" checked>
+            <button id="deleteAllTasks">Delete All Tasks</button>
+            <button id="resetTasks">Reposition Tasks</button>
+            <button id="undoBtn">Undo</button>
+            <button id="redoBtn">Redo</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
